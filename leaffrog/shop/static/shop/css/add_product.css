@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit';
+
+}
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+
+.contact-container::before {
+    content: '';
+    background-image: url('../images/add_wallpaper2.png');
+    background-size: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: black;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: rgb(70, 15, 197);
+}
+
+.goods-inputs {
+    width: 400px;
+    height: 50px;
+
+
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
+
+.goods-inputs:focus {
+    border: 3px solid  rgb(16, 57, 240);
+}
+
+.goods-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 24px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgb(58, 180, 101), rgb(16, 57, 240));
+    cursor: pointer;
+    margin: 10px 0px 0px 20px;
+
+}
+
+.contact-right img {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    
+
+    left: 400px;
+    z-index: -1;
+}
+
+.add_select {
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    width: 230px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    border-radius: 20px;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+}
+
+.add_title {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 10px 0px 10px;
+    
+}

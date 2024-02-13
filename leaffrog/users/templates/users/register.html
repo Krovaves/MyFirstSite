@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'shop/css/index_style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>Регистрация</title>
+        <meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+        <link type="text/css" href="{% static 'shop/css/register_style.css' %}" rel = 'stylesheet'>
+    </head>
+<body>
+
+
+
+
+
+
+
+    <div class="header-logo">
+
+        <a class="nav-item" href="{% url 'shop' %}"><img src="{% static 'shop/images/logo.svg' %}" alt="" width="120"><p>Leaf Frog</p></a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="reg_form">
+        <h1 align="center">Регистрация</h1>
+        <hr>
+
+
+
+        <form action="" method="post">
+            {% csrf_token %}
+            <ul class="reg_list">
+                <li>
+                    <label for="{{ form.username.id_for_label }}">
+                    <div class='reg_title'>{{ form.username.label }}</div></label>
+                    <input class="reg_input" type='text' name="username" value="">
+                    <div class="form-error">{{ form.username.errors }}</div>
+                </li>
+
+
+                <li>
+                    <label for="{{ form.first_name.id_for_label }}">
+                    <div class='reg_title'>{{ form.first_name.label }} </div></label>
+                    <input class="reg_input" type="text" name="first_name" value="">
+                    <div class="form-error">{{ form.first_name.errors }}</div>
+                </li>
+
+                <li>
+                     <label for="{{ form.last_name.id_for_label }}">
+                    <div class='reg_title'>{{ form.last_name.label }}</div></label>
+                    <input class="reg_input" type="text" name="last_name" value="">
+                    <div class="form-error">{{ form.last_name.errors }}</div>
+                </li>
+
+                <li>
+                     <label for="{{ form.sex.id_for_label }}">
+                    <div class='reg_title'>{{ form.sex.label }} </div></label>
+                        {% for f in form.sex %}
+                            {{ f }}
+                        {% endfor %}
+
+                    <div class="form-error">{{ form.sex.errors }}</div>
+                </li>
+                <li>
+                     <label for="{{ form.city.id_for_label }}">
+                    <div class='reg_title'>{{ form.city.label}}</div></label>
+                    <select class="reg_select" name="city">
+                        {% for f in form.city %}
+                            {{ f }}
+                        {% endfor %}
+                    </select>
+                    <div class="form-error">{{ form.city.errors }}</div>
+                </li>
+
+                <li>
+                    <label for="{{ form.email.id_for_label }}">
+                        <div class='reg_title'>{{ form.email.label }}</div></label>
+                    <input class="reg_input" type='text' name="email" value="">
+                    <div class="form-error">{{ form.email.errors }}</div>
+                </li>
+                <li>
+                    <label for="{{ form.password1.id_for_label }}">
+                    <div class='reg_title'>{{ form.password1.label }}</div></label>
+                    <input class="reg_input" type='password' name="password1" value="">
+                    <div class="form-error">{{ form.password1.errors }}</div>
+                </li>
+
+                <li>
+                    <label for="{{ form.password2.id_for_label }}">
+                    <div class='reg_title'>{{ form.password2.label }}</div></label>
+                    <input class="reg_input" type='password' name="password2" value="">
+                    <div class="form-error">{{ form.password2.errors }}</div>
+                </li>
+
+                <li>
+                     <label for="{{ form.agree.id_for_label }}">
+                    <span class="reg_agree"><input type='checkbox' name="agree"> Регистрируясь, вы принимаете пользовательское соглашение</span>
+                         </label>
+                     <div class="form-error">{{ form.agree.errors }}</div>
+                </li>
+
+                <p align="center"><input class="reg_button" type='submit' value='Зарегистрироваться'></p>
+            </ul>
+        </form>
+
+
+    </div>
+    </body>
+
+</html>

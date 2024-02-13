@@ -1,0 +1,33 @@
+{% extends 'header.html' %}
+
+{% block add_css %}
+
+
+{% endblock %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="cards">
+    <div class="container">
+        <div class="cards-holder">
+            {% if products %}
+
+
+            {% for p in products %}
+            {% include 'shop/goods/cart_index1.html' %}
+            {% endfor %}
+
+
+            {% else %}
+
+            {% include 'shop/http404.html' %}
+
+            {% endif %}
+
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'header.html' %}
+
+
+{% block add_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'shop/css/add_product.css' %}">
+{% endblock %}
+
+
+{% block content %}
+{% load static %}
+
+
+    <div class="container">
+        <div class="contact-container">
+            <form action="" method="post" enctype="multipart/form-data" class="contact-left">
+                {% csrf_token %}
+                <div class="contact-left-title">
+                    <h2>Добавить товар</h2>
+                    <hr>
+                </div>
+
+                    <label for="{{ form.title.id_for_label }}">
+                    <div class='add_title'>{{ form.title.label }} </div></label>
+                    <input class="goods-inputs" type="text" name="title" placeholder="Добавьте название товара">
+                    <div class="form-error">{{ form.title.errors }}</div>
+
+                    <label for="{{ form.content.id_for_label }}">
+                    <div class='add_title'>{{ form.content.label }} </div></label>
+                    <textarea class="goods-inputs" name="content" placeholder="Укажите описание товара"></textarea>
+                    <div class="form-error">{{ form.content.errors }}</div>
+
+                    <label for="{{ form_spec.text.id_for_label }}">
+                    <div class='add_title'>{{ form_spec.text.label }} </div></label>
+                    <textarea class="goods-inputs" name="text" placeholder="Напишите характеристики товара, разделенные двоеточием, и каждая новая запись должна быть записанная с новой строчки"></textarea>
+                    <div class="form-error">{{ form_spec.text.errors }}</div>
+
+                    <label for="{{ form.price.id_for_label }}">
+                    <div class='add_title'>{{ form.price.label }} </div></label>
+                    <input class="goods-inputs" type="text" name="price" placeholder="Укажите стоимость товара">
+                    <div class="form-error">{{ form.price.errors }}</div>
+
+                    <label for="{{ form_img.images.id_for_label }}">
+                    <div class='add_title'>{{ form_img.images.label }} </div></label>
+                    <input class="goods-inputs" type="file" name="images" value="">
+                    <div class="form-error">{{ form_img.images.errors }}</div>
+
+                    <label for="{{ form.cat.id_for_label }}">
+                    <div class='add_title'>{{ form.cat.label}}</div></label>
+                    <select class="add_select" name="cat">
+                        {% for f in form.cat %}
+                            {{ f }}
+                        {% endfor %}
+                    </select>
+                    <div class="form-error">{{ form.cat.errors }}</div>
+
+                    <label for="{{ form.is_published.id_for_label }}">
+                    <div class='add_title'>{{ form.is_published.label}}</div></label>
+                    <select class="add_select" name="is_published">
+                        {% for f in form.is_published %}
+                            {{ f }}
+                        {% endfor %}
+                    </select>
+                    <div class="form-error">{{ form.is_published.errors }}</div>
+
+                    <p><button type="submit">Создать</button> </p>
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% load static %}
+
+<a class="cart-goods" href="{{ p.get_absolute_url }}">
+    <article class="card2">
+
+        {% for i in img %}
+        {% if p.id == i.goods_id %}
+
+        <img src="{{ i.images.url }}" alt="{{ cat.name }}" class="card2__img">
+
+        {% endif %}
+        {% endfor %}
+        <h2 class="card2__name">{{ p.title|truncatechars:45 }}</h2>
+        <p class="card2__price">{{ p.price }}<span class="card2__currency"> руб.</span></p>
+        </a>
+        <button class="card2__btn">В корзину</button>
+
+    </article>
+
+
+
+
+
+
+
+

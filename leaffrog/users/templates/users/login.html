@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>Вход</title>
+        <meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+        <link rel="stylesheet" href="{% static 'users/css/login.css' %}">
+    </head>
+<body>
+
+
+
+    <div class="login-box">  
+          <div class="header-logo">
+
+        <a class="nav-item" href="{% url 'shop' %}"><img src="{% static 'shop/images/logo.svg' %}" alt="" width="120"></a>
+
+
+
+
+    </div>
+        <h2>Авторизация</h2>
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}">
+            <div class="form-error">{{ form.non_field_errors }}</div>
+            {% for f in form %}
+
+                <label for="{{ f.id_for_label }}">
+                <div class="user-box">
+                    {{ f }}
+                    <label>{{ f.label }}</label>
+                </div>
+                    </label>
+                    <div class="form-error">{{ f.errors }}</div>
+
+            {% endfor %}
+
+
+
+
+            <button type="submit" class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Войти
+            </button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

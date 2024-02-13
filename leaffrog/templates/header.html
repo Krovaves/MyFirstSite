@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block add_css %}
+
+    {% endblock %}
+
+    <link rel= "shortcut icon" href="{% static 'shop/images/logo.ico' %}" type="image/x-icon">
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="{% static 'shop/css/index_style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>MyShop (Beta)</title>
+ </head>
+
+<body>
+
+<div class="header">
+    <div class="container"> 
+        <div class="header-line">
+            <div class="header-logo">
+
+                <a class="nav-item" href="{% url 'shop' %}"><img src="{% static 'shop/images/logo.svg' %}" alt="" width="120"><p>Leaf Frog</p></a>
+
+            </div>
+            <div class="">
+                {% if user.is_authenticated %}
+
+                    {% for m in menu_is_auth %}
+                      {% if not forloop.last %}
+                            <a class="nav-item" href="{% url m.url_name %}">{{ m.title }}</a>
+                        {% else %}
+                             <a class="nav-item" href="{% url 'users:profile' %}">{{ user.username }}</a> | <a class="button-exit" href="{% url m.url_name %}">{{ m.title }}</a>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+
+
+                    {% for m in menu_not_auth %}
+                        {% if not forloop.last %}
+                            <a class="nav-item" href="{% url m.url_name %}">{{ m.title }}</a>
+                        {% else %}
+                            <a class="button" href="{% url m.url_name %}">{{ m.title }}</a>
+                        {% endif %}
+
+                    {% endfor %}
+
+                {% endif %}
+
+            </div>
+        </div>
+    </div>   
+</div>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>

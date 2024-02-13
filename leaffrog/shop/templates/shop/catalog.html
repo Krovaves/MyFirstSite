@@ -1,0 +1,45 @@
+{% extends 'header.html' %}
+
+{% block add_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'shop/css/catalog.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+<div class="cards">
+    <div class="container">
+        <div class="container2">
+            <div class="cards-holder">
+
+                {% for cat in cats %}
+
+                <a class="cart-goods" href="{{ cat.get_absolute_url }}">
+                    <article class="card1">
+                        <h2 class="card__name">{{ cat.name }}</h2>
+                        {% for i in img %}
+                        {% if cat.id == i.cat_id %}
+                        <img src="{{ i.images.url }}" alt="{{ cat.name }}" class="card__img">
+                        {% endif %}
+                        {% endfor %}
+                    </article>
+                </a>
+                {% endfor %}
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

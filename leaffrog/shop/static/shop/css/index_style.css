@@ -1,0 +1,397 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0px 10%;
+    border-bottom: 3px solid rgb(246,246,246);
+    min-width: 1200px;
+
+    
+}
+
+.header-line {
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    
+}
+
+.nav-item {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 25px;
+    transition: color 0.15s linear;
+}
+
+.nav-item:hover {
+    color: rgb(45, 167, 88);
+}
+
+.htag {
+    position: absolute;
+    top: 100px;
+}
+
+.header-logo p{
+    text-align: center;
+    margin: -20px
+
+}
+
+.header-logo {
+    max-width: 200px;
+}
+
+.button {
+    background-color: rgb(45, 167, 88);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 500;
+    transition: background-color 0.15s linear;
+    border-radius: 10px
+}
+
+.button:hover {
+    background-color: rgb(58, 180, 101);
+}
+
+.button-exit {
+    background-color: rgb(170, 5, 5);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-weight: 500;
+    transition: background-color 0.15s linear;
+    border-radius: 10px
+}
+
+.button-exit:hover {
+    background-color: rgb(179, 63, 54);
+}
+
+.drop-down-menu ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+}
+
+
+.drop-down-menu li {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.card {
+    background-color: #f7f7f7;
+    width: 30.5%;
+    height: 30%;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin: 20px;
+
+    
+}
+
+.cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cart-goods{
+    text-decoration: none;
+    color: #000000;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0% 0% 0%;
+    border-radius: 10px
+}
+
+.card-img {
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    overflow: hidden; /* Обрезаем изображение, если оно выходит за границы */
+}
+
+.card-title {
+    text-align: center;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    margin: 0px 0px 5px 0px;
+}
+
+.card-price {
+    display: flex;
+    justify-content: center;
+    padding: 8px 0px 5px 0px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(16, 57, 240);
+}
+
+.cart {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+    bottom: 0;
+
+    background-color: rgb(45, 167, 88);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    transition: background-color 0.15s linear;
+    border-radius: 10px
+}
+
+.cart:hover {
+    background-color: rgb(58, 180, 101);
+}
+
+
+
+
+.http404 {
+    width: 600px;
+    color: #000000 ;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin: 10px;
+    margin: 15px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+
+.http404-text {
+    text-align: center;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    margin: 0px 0px 5px 0px;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+.list-pages {
+   text-align: center;
+   margin: 0 0 20px 0;
+}
+
+.list-pages ul {
+   margin: 20px 0 0 0;
+   padding: 0;
+   list-style: none;
+}
+
+.list-pages ul li {
+   display: inline-block;
+   margin: 0 20px 0 0;
+}
+
+.list-pages a {
+   color: #000;
+   font-size: 24px;
+   text-decoration: none;
+
+}
+
+.list-pages .page-num, .page-num-selected {
+   display: inline-block;
+   width: 60px;
+   height: 44px;
+   padding: 8px 0 0 0;
+   
+   border: 1px solid #d0d0d0;
+   border-radius: 30px;
+   transition: box-shadow 0.2s linear;
+   transition: background-color 0.15s linear;
+}
+
+.list-pages .page-num:hover {
+   box-shadow: 1px 1px 1px #d0d0d0;
+   background-color: rgb(222, 231, 231);
+   
+}
+
+.list-pages .page-num-selected {
+   border: none;
+   color: #ffffff;
+   font-size: 20px;
+   background-color: rgb(51, 78, 235);
+}
+
+.list-pages .page-num-selected:hover {
+   box-shadow: none;
+   background-color: rgb(72, 90, 247);
+}
+
+
+
+
+.card2 {
+    width: 320px;
+    height: 420px;
+    background-color: rgba(245, 246, 248, 0.959);
+    color: #000000 ;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 6px 6px #0000001A;
+    margin: 15px 10px 20px 20px;
+    /*justify-content: space-between; */
+    /*flex-wrap: wrap; */
+    position: relative;
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+
+.card2::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(58, 180, 101);
+    transform: skewY(370deg);
+    position: absolute;
+    bottom: -110%;
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+.card2:hover::before {
+    transform: skewY(345deg);
+    bottom: -85%;
+    background-color: rgb(51, 78, 235);
+}
+
+
+.card2__img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    justify-content: center;
+    bottom: 0;
+    position: relative;
+    box-shadow: 0px 0px 5px 5px #0000001A;*/
+    overflow: hidden; /* Обрезаем изображение, если оно выходит за границы */
+
+    transition: 0.5s;
+
+
+}
+
+.card2__name {
+    padding: 0px 0px 0px 0px;
+    font-size: 18px;
+    margin: 0px;
+    margin-top: 20px;
+    position: relative;
+    font-weight: 400;
+    top: 0px;
+    transition: 0.2s;
+}
+
+.card2:hover .card2__name {
+    top: -25px;
+    opacity: 0.0;
+}
+
+.card2__price {
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-weight: 500;
+    position: relative;
+
+    top: 0px;
+    transition: 0.5s;
+}
+
+.card2:hover .card2__price {
+    color: #57116d;
+    top: -55px;
+
+}
+
+.card2__currency {
+    font-size: 18px;
+
+    transition: 0.5s;
+}
+
+.card2__btn {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 50px 50px;
+    border-radius: 20px;
+    color: inherit;
+
+    font-weight: inherit;
+    position: relative;
+
+    background-color: rgb(45, 167, 88);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    font-weight: 500;
+    transition: background-color 0.15s linear;
+
+
+    transition: 0.5s;
+    top: 80px;
+
+}
+
+.card2__btn:hover {
+    background-color: #038614;
+
+    transition: 0.5s;
+}
+
+.card2:hover .card2__btn {
+    transition: 0.5s;
+    top: -75px;
+
+}
+

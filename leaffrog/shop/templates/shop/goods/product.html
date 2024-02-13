@@ -1,0 +1,95 @@
+<!--https://www.ozon.ru/product/umnyy-holodilnik-invertornyy-viomi-bcd-351w-857954584/?asb=N3K%252B5tGhG5l0nSXLNQhShboQFk6S5mZh1AbhHjarPQ2MOT4LmgIIpovIkf8Oh555&asb2=J8Z4WFM0OL0ttexfURKVnqshhjwXHw5ac1bhnD7kVCdlP3C-qTBgBbd-dCgzNRYCFBJQhRw5Xvsr16xvs8GcU1G4GCxvPtjfr7pnU-5rX3QGSFXZTMm5zOxpdGdZfkWK4ocerLkvkBLsJ8ZKLpg2fVax-mEHMD-9hZAH9EP2swk&avtc=1&avte=2&avts=1703104279&keywords=%D1%85%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA-->
+<!--https://www.ozon.ru/product/chaynik-elektricheskiy-2-l-metall-1500vt-at-electric-604924616/?advert=m4NFIK6mK9blJ2ozeFZ4IuKLraYdgVH3Wx-LoUngprg05o5wwfTnTENO1RTazb4Qv2pC-XkHOIT_uvOdzLl-0Vg2jL1MQL99ulqIiYEcWz3xgEmK4bsqihQRfbjPSh1fJjCqtNLmkzqk0Dtjblc3LHKz-AnOvetzxP33kRkDjAJyCxfPHh1DWXw0korve_HGVmVvjXMsgBG-D7hnHb6MoDZ3TKwVXv8JeQeoYu45PZ3A5ed486fR4Uq5&avtc=1&avte=2&avts=1704889150-->
+<!--https://www.ozon.ru/product/televizor-samsung-ue43cu8500uxce-43-4k-uhd-chernyy-1301984907/?asb=1hQogT6oaQW%252FL2Lc2GnMD7v0V%252BCyWj4lpfmChIaTWoo%253D&asb2=CrrV8sCcp_XGT36GmdIs5D5trFv8Hje36h3L2RE17ZhV4fwoMSpT9YSTXOiBPDwx&avtc=1&avte=2&avts=1705001858&keywords=%D1%82%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80%D1%8B&reviewsVariantMode=2-->
+<!--https://www.ozon.ru/product/16-1-noutbuk-honor-magicbook-16-amd-ryzen-5-5600h-3-3-ggts-ram-16-gb-ssd-512-gb-amd-radeon-1377098870/?asb=9ewCyDbe%252F0%252Fo3QD5ngA1fmvfE6Url8E92QbZPHQvqg0%253D&asb2=zmP_PKQw7HIYtyuEfAI95S-eecT9U1sLvMEyWFWlWkZQ0OAfT9oxmeq6uuDFHwna&avtc=1&avte=2&avts=1705006046 -->
+{% extends 'header.html' %}
+
+
+{% block add_css %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'shop/css/goods_style.css' %}">
+{% endblock %}
+
+
+{% block content %}
+{% load static %}
+
+
+<div class="container"> 
+    <h1>{{ post.title }}  <span class="stock"></h1>
+    <div class="container-wrapper">
+
+        <div class="wrapper">
+
+            <div class="block-img">
+            <section class="container2">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        {% for i in img %}
+                        <img id="{{ i.id }}" src="{{ i.images.url }}" width="80%">
+                        {% endfor %}
+                    </div>
+                    <div class="slider-nav">
+                        {% for i in img %}
+                        <a href="#{{ i.id }}"></a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            </div>
+
+
+
+           <!-- <div class="block-img">
+                {% for i in img %}
+                <img class="wrapper-img" src="{{ i.images.url }}" alt="" width="80%">
+                {% endfor %}
+            </div> --!>
+
+
+
+
+
+
+           <ul class="params">
+               {% for sp in spec %}
+                <li><span class="label">{{ sp.parameter }}</span>{{ sp.value }}</li>
+                {% endfor %}
+           </ul>
+
+
+           <div class="quantity">
+            <span class="stock"><i class="fa-solid fa-check fa-beat fa-xl" style="color: #2da758;"></i>
+                 В наличии</span>
+                <p class="qwe1">Цена за шт.</p>
+                <p class="price">{{post.price}} ₽</p>
+                    <button type="submit" name="add-to-cart" class="button_cart">В корзину</button>
+            </div>
+        </div>
+    </div>    
+</div>
+
+{% if post.content %}
+<div class="container">
+    <h2>Описание</h2>
+    <div class="discription">
+        <p>
+            {{ post.content|linebreaks }}
+                
+        </p>
+    </div>
+{% endif %}
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/0b86b6d575.js" crossorigin="anonymous"></script>        
+
+{% endblock %}

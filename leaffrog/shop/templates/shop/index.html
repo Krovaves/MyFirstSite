@@ -1,0 +1,44 @@
+{% extends 'header.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="cards">
+    <div class="container">
+        <div class="cards-holder">
+            {% for p in post %}
+
+            {% include 'shop/goods/cart_index1.html' %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+
+{% if page_obj.has_other_pages %}
+<nav class="list-pages">
+    <ul>
+        {% for p in paginator.page_range %}
+        {% if page_obj.number == p %}
+
+            <li class="page-num page-num-selected">
+                {{ p }}
+            </li>
+
+        {% else %}
+
+        <a href="?page={{ p }}">
+            <li class="page-num">
+                {{ p }}
+            </li>
+        </a>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
+{% endif %}
+
+{% endblock %}

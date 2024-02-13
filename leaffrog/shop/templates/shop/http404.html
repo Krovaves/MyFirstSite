@@ -1,0 +1,10 @@
+{% load static %}
+
+
+<div class="http404">
+    <p class="http404-text">Ничего не найдено...</p>
+    <a href="{% url 'shop' %}">
+        <img class="http404-img" src="{% static 'shop/images/catalog/cute-sad-frog.png' %}" width="100%"
+             alt="На главную" title="На главную">
+    </a>
+</div>
