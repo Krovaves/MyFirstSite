@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, PasswordChangeForm
 from django.core.exceptions import ValidationError
 
 from users.models import City, User
@@ -56,3 +56,39 @@ class RegistrationForm(UserCreationForm):
             'password': 'Пароль: ',
             'email': 'Email: '
         }
+
+
+class ProfileEditForm(forms.ModelForm):
+    username = forms.CharField(label='Логин', widget=forms.TextInput(), min_length=3)
+    email = forms.CharField(label='Email', widget=forms.EmailInput())
+
+    class Meta:
+        model = get_user_model()
+        fields = ['username', 'email', 'first_name', 'last_name']
+        labels = {
+            'first_name': 'Имя',
+            'last_name': 'Фамилия'
+        }
+
+        widgets = {
+            'first_name': forms.TextInput(),
+            'last_name': forms.TextInput()
+        }
+
+    def clean_email(self):
+        email = self.cleaned_data['email']
+        if get_user_model().objects.filter(email=email).exists():
+            raise forms.ValidationError('Такой Email уже существует')
+        return email
+
+    def clean_username(self):
+        username = self.cleaned_data['username']
+        if get_user_model().objects.filter(username=username).exists():
+            raise forms.ValidationError('Такой Логин уже существует')
+        return username
+
+
+class UserPasswordChangeForm(PasswordChangeForm):
+    old_password = forms.CharField(label='Старый пароль', widget=forms.PasswordInput())
+    new_password1 = forms.CharField(label='Новый пароль', widget=forms.PasswordInput())
+    new_password2 = forms.CharField(label='Подтверждение пароля', widget=forms.PasswordInput())

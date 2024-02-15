@@ -1,12 +1,12 @@
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, PasswordChangeView
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse, reverse_lazy
-from django.views.generic import FormView, CreateView, DetailView
+from django.views.generic import FormView, CreateView, DetailView, UpdateView
 
-from users.forms import LoginUserForm, RegistrationForm
+from users.forms import LoginUserForm, RegistrationForm, ProfileEditForm, UserPasswordChangeForm
 
 
 class LoginUser(LoginView):
@@ -61,3 +61,85 @@ class ProfileUser(LoginRequiredMixin, DetailView):
 
     def get_object(self, queryset=None):
         return self.request.user
+
+    def get_context_data(self, **kwargs):
+        user = self.request.user
+        context = super().get_context_data(**kwargs)
+        if user.seller is True:
+            context['menu'] = [
+                {'title': 'Добавить товар', 'url_name': 'add_product'},
+                {'title': 'Мои товары', 'url_name': 'users:cart'},
+                {'title': 'Избранное', 'url_name': 'users:login'},
+                {'title': 'Заказы', 'url_name': 'catalog'},
+                {'title': 'Изменить', 'url_name': 'users:profile_edit'},
+                {'title': 'Выйти', 'url_name': 'users:logout'},
+            ]
+        else:
+            context['menu'] = [
+                {'title': 'Главная', 'url_name': 'shop'},
+                {'title': 'Избранное', 'url_name': 'users:login'},
+                {'title': 'Заказы', 'url_name': 'catalog'},
+                {'title': 'Изменить', 'url_name': 'users:profile_edit'},
+                {'title': 'Выйти', 'url_name': 'users:logout'},
+            ]
+
+        context['data'] = [
+                {'title': 'Логин', 'value': user.username},
+                {'title': 'Имя', 'value': user.first_name},
+                {'title': 'Фамилия', 'value': user.last_name},
+                {'title': 'Email', 'value': user.email},
+                {'title': 'Город', 'value': user.city},
+                {'title': 'Статус', 'value': user.seller},
+            ]
+
+        return context
+
+
+class ProfileEditUser(LoginRequiredMixin, UpdateView):
+    model = get_user_model()
+    form_class = ProfileEditForm
+    template_name = 'users/profile_edit.html'
+
+    def get_object(self, queryset=None):
+        return self.request.user
+
+    def get_success_url(self):
+        return reverse_lazy('users:profile')
+
+    def get_context_data(self, **kwargs):
+        user = self.request.user
+        context = super().get_context_data(**kwargs)
+        if user.seller is True:
+            context['menu'] = [
+                {'title': 'Добавить товар', 'url_name': 'add_product'},
+                {'title': 'Мои товары', 'url_name': 'users:cart'},
+                {'title': 'Избранное', 'url_name': 'users:login'},
+                {'title': 'Заказы', 'url_name': 'catalog'},
+                {'title': 'Изменить', 'url_name': 'users:profile_edit'},
+                {'title': 'Выйти', 'url_name': 'users:logout'},
+            ]
+        else:
+            context['menu'] = [
+                {'title': 'Главная', 'url_name': 'shop'},
+                {'title': 'Избранное', 'url_name': 'users:login'},
+                {'title': 'Заказы', 'url_name': 'catalog'},
+                {'title': 'Изменить', 'url_name': 'users:profile_edit'},
+                {'title': 'Выйти', 'url_name': 'users:logout'},
+            ]
+
+        context['data'] = [
+                {'title': 'Логин', 'value': user.username},
+                {'title': 'Имя', 'value': user.first_name},
+                {'title': 'Фамилия', 'value': user.last_name},
+                {'title': 'Email', 'value': user.email},
+                {'title': 'Город', 'value': user.city},
+                {'title': 'Статус', 'value': user.seller},
+            ]
+
+        return context
+
+
+class UserPasswordChange(PasswordChangeView):
+    form_class = UserPasswordChangeForm
+    success_url = reverse_lazy("users:password_change_done")
+    template_name = "users/password_change_form.html"

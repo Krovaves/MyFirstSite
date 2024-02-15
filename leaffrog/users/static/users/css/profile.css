@@ -1,0 +1,250 @@
+body{
+    margin-top: 20px;
+}
+
+.main{
+    padding: 15px;
+
+    
+}
+
+.col {
+    background-color: #f7f7f7;
+    min-width: 300px;
+    height: 485px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.col2 {
+    background-color: #f7f7f7;
+    min-width: 700px;
+    height: auto;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin: 20px;
+    
+}
+
+.car-body {
+
+    justify-content: center;
+    margin: 3% 0% 0% 0%;
+    border-radius: 10px;
+    width: 200px;
+
+}
+.car-body img{
+
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: 5% 0% 0% 10%;
+    border-radius: 80px;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+.menu {
+    width: 200px;
+    position: relative;
+    margin: 5px 0 10px 20px;
+    
+}
+
+.menu h3{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    margin: 0px 0px 5px 0px;
+    margin-bottom: 15px;
+}
+
+.menu a {
+    display: block; /* Устанавливаем элементы <a> как блочные */
+    margin: 5px 0 10px 0px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    justify-content: center;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    margin: 0px 0px 5px 0px;
+    color: rgb(24, 24, 24);
+    transition: color 0.15s linear;
+}
+
+
+.menu a:hover {
+    color: rgb(45, 167, 88);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content {
+    background-color: whitesmoke;
+}
+
+.row {
+
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.card-body {
+    background-color: #f7f7f7;
+    width: 30.5%;
+    height: 30%;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin: 20px;
+
+}
+
+.bbb {
+    margin: 20px 10px 20px 70px;
+
+}
+
+.card-bod {
+    width: auto;
+
+}
+
+.nam {
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    margin-right: 150px;
+
+}
+
+.nam h5{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 1px;
+    margin-left: 50px;
+}
+
+.nam1 {
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    margin-right: 100px;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+.im {
+    display: flex;
+    justify-content: center;
+}
+
+.inp {
+    width: 200px;
+    height: 50px;
+
+    text-decoration: none;
+    outline: none;
+
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #08ac16;
+    border-radius: 50px;
+
+    margin: 5px 0 10px 0px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    justify-content: center;
+    transition: 0.15s linear;
+}
+
+.inp:hover {
+    background-color: #1713ee;
+
+}
+
+.col3 {
+    background-color: #f7f7f7;
+    width: 700px;
+    height: auto;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin: 20px;
+    justify-content: center;
+    display: flex;
+
+    align-items: center;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.psw {
+    margin-top: 8px;
+    margin-bottom: 50px;
+    margin: 20px;
+    margin-bottom: 60px;
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 25px;
+    transition: 0.15s linear;
+    background-color:rgb(172, 20, 9);
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.psw:hover {
+    background-color:rgb(134, 17, 9);
+}
+
+.nam5 {
+    margin-top: 20px;
+    height: 40px;
+    width: 300px;
+    margin-right: 200px;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 55px;
+
+    
+}

@@ -36,26 +36,44 @@
 
             <div class="col2">
                 <div class="card55">
-                    <h1 class="bbb ">Основная информация</h1>
+                    <h1 class="bbb ">Изменить основную информацию</h1>
                     <div class="card-bod">
-                        {% for d in data %}
+                        <form action="" method="post" enctype="multipart/form-data" class="contact-left">
+                        {% csrf_token %}
+                            <div class="form-error">{{ form.non_field_errors }}</div>
+                        {% for f in form %}
 
 
                         <div class="row">
                             <div class="nam">
-                                <h5>{{ d.title }}</h5>
+                                <label for="{{ f.id_for_label }}">
+                                <h5>{{ f.label }}</h5></label>
                             </div>
                             <div class="nam1">
-                                {% if d.title == 'Статус' %}
-                                    {{ d.value|yesno:"Продавец,Пользователь" }}
-                                {% else %}
-                                    {{ d.value }}
-                                {% endif %}
+                                {{ f }}
+
                             </div>
+                            <div class="form-error">{{ f.errors }}</div>
                         </div>
                         {% if not forloop.last %} <hr> {% endif %}
 
                         {% endfor %}
+                            <p class="im"><button class="inp" type="submit">Обновить</button> </p>
+                        </form>
+
+
+                            <div class="card55">
+                                <h1 class="bbb ">Изменение пароля</h1>
+
+                            <div class="nam5">
+                                    <a class="psw" href="{% url 'users:password_change' %}">Изменить пароль</a>
+                            </div>
+                                </div>
+                                </div>
+
+
+
+
                     </div>
                 </div>
 

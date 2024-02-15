@@ -43,6 +43,8 @@ from shop.models import Goods, GoodsImages, Category, GoodsSpecifications
 
 
 class AddProductImgForm(forms.ModelForm):
+    images = forms.ImageField()
+
     class Meta:
         model = GoodsImages
         fields = ['images']

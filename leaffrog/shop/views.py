@@ -84,12 +84,15 @@ def add_product(request):
             GoodsSpecifications.data2(text=form_spec.cleaned_data['text'], id=goods.pk)
 
             return redirect('shop')
+        return render(request, 'shop/add_product.html', {'form': form, 'form_img': form_img, 'form_spec': form_spec})
 
     else:
-        form = AddProductForm()
-        form_img = AddProductImgForm()
-        form_spec = AddProductSpecForm()
-    return render(request, 'shop/add_product.html', {'form': form, 'form_img': form_img, 'form_spec': form_spec})
+        if request.user.seller:
+            form = AddProductForm()
+            form_img = AddProductImgForm()
+            form_spec = AddProductSpecForm()
+            return render(request, 'shop/add_product.html', {'form': form, 'form_img': form_img, 'form_spec': form_spec})
+    return redirect('shop')
 
 
 def archive(request, year): # Бесполезная функция, для демонстрации конвертора
