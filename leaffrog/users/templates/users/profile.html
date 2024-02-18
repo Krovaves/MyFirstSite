@@ -20,7 +20,11 @@
                 <div class="ca ">
                     <div class="car-body">
                         <div class="img">
-                        <img src="{% static 'shop/images/catalog/cute-sad-frog.jpeg' %}" class="imgs" width="150">
+                            {% if user.photo %}
+                                <img src="{{ user.photo.url }}" class="imgs" width="150">
+                            {% else %}
+                                <img src="{{ default_image }}" class="imgs" width="150">
+                            {% endif %}
                         </div>
                         <div class="menu">
                             <h3>{{ user.first_name }} {{ user.last_name }}</h3>

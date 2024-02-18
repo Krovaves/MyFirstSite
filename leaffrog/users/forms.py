@@ -59,12 +59,12 @@ class RegistrationForm(UserCreationForm):
 
 
 class ProfileEditForm(forms.ModelForm):
-    username = forms.CharField(label='Логин', widget=forms.TextInput(), min_length=3)
-    email = forms.CharField(label='Email', widget=forms.EmailInput())
+    username = forms.CharField(label='Логин', widget=forms.TextInput(), min_length=3, required=False, disabled=True)
+    email = forms.CharField(label='Email', widget=forms.EmailInput(), required=False, disabled=True)
 
     class Meta:
         model = get_user_model()
-        fields = ['username', 'email', 'first_name', 'last_name']
+        fields = ['username', 'email', 'first_name', 'last_name', 'photo']
         labels = {
             'first_name': 'Имя',
             'last_name': 'Фамилия'
@@ -75,17 +75,17 @@ class ProfileEditForm(forms.ModelForm):
             'last_name': forms.TextInput()
         }
 
-    def clean_email(self):
-        email = self.cleaned_data['email']
-        if get_user_model().objects.filter(email=email).exists():
-            raise forms.ValidationError('Такой Email уже существует')
-        return email
-
-    def clean_username(self):
-        username = self.cleaned_data['username']
-        if get_user_model().objects.filter(username=username).exists():
-            raise forms.ValidationError('Такой Логин уже существует')
-        return username
+    # def clean_email(self):
+    #     email = self.cleaned_data['email']
+    #     if email and get_user_model().objects.filter(email=email).exists():
+    #         raise forms.ValidationError('Такой Email уже существует')
+    #     return email
+    #
+    # def clean_username(self):
+    #     username = self.cleaned_data['username']
+    #     if username and get_user_model().objects.filter(username=username).exists():
+    #         raise forms.ValidationError('Такой Логин уже существует')
+    #     return username
 
 
 class UserPasswordChangeForm(PasswordChangeForm):

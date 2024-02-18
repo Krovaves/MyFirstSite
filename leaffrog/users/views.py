@@ -2,10 +2,11 @@ from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView, PasswordChangeView
 from django.http import HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse, reverse_lazy
 from django.views.generic import FormView, CreateView, DetailView, UpdateView
 
+from leaffrog import settings
 from users.forms import LoginUserForm, RegistrationForm, ProfileEditForm, UserPasswordChangeForm
 
 
@@ -58,6 +59,9 @@ class RegisterUser(CreateView):
 class ProfileUser(LoginRequiredMixin, DetailView):
     template_name = 'users/profile.html'
     context_object_name = 'profile_data'
+    extra_context = {
+        'default_image': settings.DEFAULT_USER_IMAGE,
+    }
 
     def get_object(self, queryset=None):
         return self.request.user
@@ -99,6 +103,9 @@ class ProfileEditUser(LoginRequiredMixin, UpdateView):
     model = get_user_model()
     form_class = ProfileEditForm
     template_name = 'users/profile_edit.html'
+    extra_context = {
+        'default_image': settings.DEFAULT_USER_IMAGE,
+    }
 
     def get_object(self, queryset=None):
         return self.request.user
@@ -117,6 +124,7 @@ class ProfileEditUser(LoginRequiredMixin, UpdateView):
                 {'title': 'Заказы', 'url_name': 'catalog'},
                 {'title': 'Изменить', 'url_name': 'users:profile_edit'},
                 {'title': 'Выйти', 'url_name': 'users:logout'},
+
             ]
         else:
             context['menu'] = [
