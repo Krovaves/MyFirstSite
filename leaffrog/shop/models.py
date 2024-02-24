@@ -20,7 +20,6 @@ class Goods(models.Model):
 
     title = models.CharField(max_length=255, verbose_name='Название')
     content = models.TextField(blank=True, verbose_name='Описание')
-
     price = models.IntegerField(default=0, verbose_name='Цена')
     time_create = models.DateTimeField(auto_now_add=True, verbose_name='Время создания')
     time_update = models.DateTimeField(auto_now=True, verbose_name='Время редактирования')

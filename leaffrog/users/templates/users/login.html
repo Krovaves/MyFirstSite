@@ -54,6 +54,9 @@
 
             <a class="btn" href="{% url 'users:password_reset' %}"> Забыли пароль?</a>
         </form>
+          <a class="nav-item" href="{% url 'social:begin' 'github' %}"><img src="/media/social-auth/github.png" alt="" width="50"></a>
+          <a class="nav-item" href="{% url 'social:begin' 'vk-oauth2' %}"><img src="/media/social-auth/VK.png" alt="" width="50"></a>
+
     </div>
 
 

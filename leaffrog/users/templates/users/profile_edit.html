@@ -65,7 +65,7 @@
                             <p class="im"><button class="inp" type="submit">Обновить</button> </p>
                         </form>
 
-
+                            {% if not perms.users.social_auth or user.is_superuser%}
                             <div class="card55">
                                 <h1 class="bbb ">Изменение пароля</h1>
 
@@ -74,6 +74,7 @@
                             </div>
                                 </div>
                                 </div>
+                            {% endif %}
 
 
 

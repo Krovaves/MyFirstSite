@@ -1,0 +1,2675 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-02-22T18:46:51.890Z",
+    "user": 1,
+    "content_type": 3,
+    "object_id": "1",
+    "object_repr": "social",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add Категория",
+    "content_type": 6,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change Категория",
+    "content_type": 6,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete Категория",
+    "content_type": 6,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Категория",
+    "content_type": 6,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Изображение",
+    "content_type": 7,
+    "codename": "add_categoryimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Изображение",
+    "content_type": 7,
+    "codename": "change_categoryimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Изображение",
+    "content_type": 7,
+    "codename": "delete_categoryimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Изображение",
+    "content_type": 7,
+    "codename": "view_categoryimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Товар",
+    "content_type": 8,
+    "codename": "add_goods"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Товар",
+    "content_type": 8,
+    "codename": "change_goods"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Товар",
+    "content_type": 8,
+    "codename": "delete_goods"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Товар",
+    "content_type": 8,
+    "codename": "view_goods"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Изображение",
+    "content_type": 9,
+    "codename": "add_goodsimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Изображение",
+    "content_type": 9,
+    "codename": "change_goodsimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Изображение",
+    "content_type": 9,
+    "codename": "delete_goodsimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Изображение",
+    "content_type": 9,
+    "codename": "view_goodsimages"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add goods specifications",
+    "content_type": 10,
+    "codename": "add_goodsspecifications"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change goods specifications",
+    "content_type": 10,
+    "codename": "change_goodsspecifications"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete goods specifications",
+    "content_type": 10,
+    "codename": "delete_goodsspecifications"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view goods specifications",
+    "content_type": 10,
+    "codename": "view_goodsspecifications"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Город",
+    "content_type": 11,
+    "codename": "add_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Город",
+    "content_type": 11,
+    "codename": "change_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Город",
+    "content_type": 11,
+    "codename": "delete_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Город",
+    "content_type": 11,
+    "codename": "view_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Пользователь",
+    "content_type": 12,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Пользователь",
+    "content_type": 12,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Пользователь",
+    "content_type": 12,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Пользователь",
+    "content_type": 12,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add association",
+    "content_type": 13,
+    "codename": "add_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change association",
+    "content_type": 13,
+    "codename": "change_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete association",
+    "content_type": 13,
+    "codename": "delete_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view association",
+    "content_type": 13,
+    "codename": "view_association"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add code",
+    "content_type": 14,
+    "codename": "add_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change code",
+    "content_type": 14,
+    "codename": "change_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete code",
+    "content_type": 14,
+    "codename": "delete_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view code",
+    "content_type": 14,
+    "codename": "view_code"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add nonce",
+    "content_type": 15,
+    "codename": "add_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change nonce",
+    "content_type": 15,
+    "codename": "change_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete nonce",
+    "content_type": 15,
+    "codename": "delete_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view nonce",
+    "content_type": 15,
+    "codename": "view_nonce"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add user social auth",
+    "content_type": 16,
+    "codename": "add_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change user social auth",
+    "content_type": 16,
+    "codename": "change_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete user social auth",
+    "content_type": 16,
+    "codename": "delete_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view user social auth",
+    "content_type": 16,
+    "codename": "view_usersocialauth"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add partial",
+    "content_type": 17,
+    "codename": "add_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change partial",
+    "content_type": 17,
+    "codename": "change_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete partial",
+    "content_type": 17,
+    "codename": "delete_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view partial",
+    "content_type": 17,
+    "codename": "view_partial"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Social Auth",
+    "content_type": 12,
+    "codename": "social_auth"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "social",
+    "permissions": [
+      69
+    ]
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "shop",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "shop",
+    "model": "categoryimages"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "shop",
+    "model": "goods"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "shop",
+    "model": "goodsimages"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "shop",
+    "model": "goodsspecifications"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "users",
+    "model": "city"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "users",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "social_django",
+    "model": "association"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "social_django",
+    "model": "code"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "social_django",
+    "model": "nonce"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "social_django",
+    "model": "usersocialauth"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "social_django",
+    "model": "partial"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0pdwhe1iebrjsq10p0fksh5ui92yd1aw",
+  "fields": {
+    "session_data": ".eJxVj0uLwjAUhf9L1lpsmlfdKYKggiDjMLgJN7nRhBYjpi0j4n-3HWTQ7Tl853EnXTWO0Dae6tRA48iU3H7brwVfmWV1mR3ivvByHkK6_Gw6v-P5LZER0QOh2-SuOmCP5J-aAVu582CkaAPU2sary15qyroq-15vZ0PpJ-ch-R5ypjCMT8yEmVKywlqmylxSg1KhZQiUKlVQISkt2ZEJ4BQBS0SGQgmOog999f5F15AaXcdTOL8N-79NHk_D7lZl:1rdX2K:qDUxPHnnhVI98ql8Zm57YNKkGYCgNP-feC_IKZUVfSo",
+    "expire_date": "2024-03-08T15:00:28.330Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bo4hfgbgtcraanf7jzg3t64itpbaxuv1",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHAMDxcuvcbCANUqgaS0q6M_65NutDtPefcFwtxW2vYRlnCnNmZeXb63SimR2k7yPfYbp2n3tZlJr4r_KCDX3suz8vh_h3UOOq3piyyUkATJkGT1-gcaG1RozROEiowYI1L4GVMBRIaMl5Jb8mJTCTZ-wPGvzbr:1raMyS:-8A5fjuJp7AasBGyLt8QfUCUfdNQIJk8ATLxRwLAxf8",
+    "expire_date": "2024-02-28T21:39:24.848Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pt2oyan8f479yjgqhcbv2q9donmvemga",
+  "fields": {
+    "session_data": ".eJxVjkurwjAUhP9L1lLSpM3DnbqQCxfKVVy4CufEk7bX0kKTLkT879bHQlcDM3wzc2V1m5oJXUyQiC3ZAYO8_Ff-vP3rd37P13K9r4r6GKbN72jxhy2Ygyk1boo0uvY0I3n-bSL4M_WPJA6-hc75YaTs7cbsNZhtn1KtZkx88w3EZoaV0VyoIgg0yC1ZbYMIghQ3QIShtKSUkSgNStKaFHACWeqTyItShWDm0vf-s7qDmFw31G3_cfD1hd3uuexX1A:1rdEQv:3l73KSbW3daHMknBJxOl3JwY0mDGlvevNm-GlmT5V4Y",
+    "expire_date": "2024-03-07T19:08:37.904Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xsn4fbowwm4v4qufbe76n0b2c5hwzw0t",
+  "fields": {
+    "session_data": "eyJfcGFzc3dvcmRfcmVzZXRfdG9rZW4iOiJjMmlnMmktNTRjY2RkMjI4MTczMzQxMjRlNmU1YTRmNTE5Y2I3MDMifQ:1rb2bQ:_8w6rI7rJCqmojbRQPG5-PUPZRHgzEvv0p3aHKwt2ZQ",
+    "expire_date": "2024-03-01T18:06:24.293Z"
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 1,
+  "fields": {
+    "title": "Умный холодильник инверторный Viomi BCD-351W",
+    "content": "1 (один) год полной гарантии на весь прибор / 10 (десять) лет гарантии на инверторный мотор, 5 (пять) лет гарантии на обычный мотор с даты покупки.\n\nНовинка Viomi - инверторный двухметровый холодильник с технологией No Frost. Холодильник, как и вся техника Viomi, работает в российском регионе экосистемы Mi Home. Умеет сообщать о неисправностях, о неплотно закрытой двери, можно выставлять температуру.\n\nОбщий объем двух камер холодильника Viomi Smart Refrigerator составляет 351 л, чего достаточно для большого количества продуктов. Морозильная камера расположена в нижней части. В холодильнике Viomi Smart Refrigerator реализованы функции быстрого замораживания и быстрого охлаждения с пониженной температурой. Технология No Frost позволит достичь автоматизированного контроля над процессом размораживания, поэтому вашего вмешательства не потребуется.\n\nКлиматический класс: SN/N/ST/T",
+    "price": 29991,
+    "time_create": "2024-01-10T11:50:10.652Z",
+    "time_update": "2024-01-21T20:12:04.164Z",
+    "is_published": true,
+    "cat": 1
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 2,
+  "fields": {
+    "title": "Чайник электрический 2 л, металл, 1500Вт AT ELECTRIC",
+    "content": "Чайник электрический 2 л 1500Вт - это эконом вариант с прекрасным соотношением цены и качества.\n\nКорпус модели выполнен из термостойкого металла. Блестящий глянцевый чайник, станет украшением вашей кухни. \n\nВ электрочайнике предусмотрено автоматическое отключение при закипании воды.\n\nБольшой объем, которого хватит на всех, чтобы заварить бодрящий кофе или чай.\n\nДизайн чайника отлично вписывается в любой интерьер: для офиса, для дома, для дачи.\n\nСкрытый дисковый нагрев.\n\nИндикатор включения.\n\nВращение 360 градусов.\n\nОбъем - 2 л.\n\nМощность - 1500 Вт.\n\nFoshan Smart Energy Co. ltd",
+    "price": 750,
+    "time_create": "2024-01-10T12:22:09.906Z",
+    "time_update": "2024-01-21T20:12:04.183Z",
+    "is_published": true,
+    "cat": 2
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 3,
+  "fields": {
+    "title": "Телевизор Samsung UE43CU8500UXCE 43 4K UHD, черный",
+    "content": "",
+    "price": 39990,
+    "time_create": "2024-01-11T20:27:30.612Z",
+    "time_update": "2024-01-11T20:27:30.613Z",
+    "is_published": true,
+    "cat": 3
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 4,
+  "fields": {
+    "title": "16.1 Ноутбук Honor MagicBook 16, AMD Ryzen 5 5600H (3.3 ГГц), RAM 16 ГБ, SSD 512 ГБ, AMD Radeon Graphics, Windows Home, серебристый, Русская раскладка",
+    "content": "Строгий и современный дизайн это основные атрибуты Honor MagicBook 16 . Помимо отличного экрана модель ярко выделяет современная начинка , а именно процессор от компании AMD Ryzen 5 5600H имеющий на борту 6 физических ядер , а так же 12 логических потоков обеспечивающий отличную производительность в любой современной задачи . 16 дюймовый экран выполненный по технологии IPS имеет 300 nit пиковой яркости , а так же замечательный откалиброванный цветовой охват в 100% sRGB . Данная модель ноутбука является частым выбором фотографа или человека работающего с цветом . 16 гб оперативной памяти в данный момент считается эталонным показателем позволяющим работать в офисных приложениях , а так же в требовательных программах Adobe . Накопитель имеет 512 Гб постоянно памяти и выполнен по стандарту PCI-E 4.0",
+    "price": 60590,
+    "time_create": "2024-01-11T20:50:28.738Z",
+    "time_update": "2024-01-20T23:11:24.462Z",
+    "is_published": true,
+    "cat": 4
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 14,
+  "fields": {
+    "title": "Телевизор Sber SDX-55U4127, 55\"(139 см), UHD 4K",
+    "content": "Безрамочный телевизор с ассистентом Салют. Диагональ 55 дюйма и Ultra HD-разрешение 3840x2160 пикселей — позволяет смотреть эфирное телевидение и видео из онлайн-сервисов. Можно поставить на тумбу или повесить на стену. Встроена акустика закрытого типа. В комплекте — 100+ бесплатных телеканалов и промоподписки на популярные онлайн-кинотеатры.",
+    "price": 25590,
+    "time_create": "2024-02-03T15:02:54.539Z",
+    "time_update": "2024-02-03T15:02:54.539Z",
+    "is_published": true,
+    "cat": 3
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 15,
+  "fields": {
+    "title": "Чайник электрический стеклянный KONONO 1800W 2 л",
+    "content": "Электрический чайник вскипятит большой объем воды за считанные минуты. Корпус выполнен из нержавеющей стали в комбинации с качественным пластиком, что обеспечивает долгий срок службы. Кроме того, прибор легко мыть. Благодаря универсальному дизайну он подойдет для кухни в любом стиле.\r\nКрышка электрического чайника открывается нажатием кнопки, которая расположена на теплоизоляционной ручке. Чтобы начать подогрев воды, необходимо нажать кнопку в нижней части корпуса. Техника для кухни отключится автоматически при закипании или недостаточном количестве жидкости. Такая опция защитит чайник от короткого замыкания и перегрева. Закрытый нагревательный элемент также обеспечивает безопасное использование прибора для кухни. Устройство одним движением устанавливается на подставке, при необходимости его можно повернуть на 360 градусов. Объем чайника - 2 л, мощность - 1800 Вт. В чайник встроена LED-подсветка.",
+    "price": 727,
+    "time_create": "2024-02-03T15:14:38.277Z",
+    "time_update": "2024-02-03T15:14:38.277Z",
+    "is_published": true,
+    "cat": 2
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 30,
+  "fields": {
+    "title": "Морозильная камера Haier HF-82WAA White",
+    "content": "Морозильная камера Haier HF-82WAA белого цвета сохранит все полезные вещества в продуктах, благодаря быстрой заморозке мощностью 9 кг за 24 ч. Несмотря на компактные габариты 50х55х84 см, устройство отличается вместительностью 82 л. Управлять им просто. Электронная панель размещена на фасаде, поэтому чтобы увеличить или уменьшить температуру, не нужно открывать двери устройства.",
+    "price": 20990,
+    "time_create": "2024-02-04T17:38:48.887Z",
+    "time_update": "2024-02-04T17:38:48.887Z",
+    "is_published": true,
+    "cat": 1
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 31,
+  "fields": {
+    "title": "Ноутбук Huawei MateBook B3-510 Gray (53012JEG)",
+    "content": "Ноутбук Huawei MateBook B3-510 Gray (53012JEG) - это надежный и мощный ноутбук, который станет отличным помощником в работе и учебе. Он оснащен современными технологиями и имеет стильный серый корпус.\r\n\r\nИдеальное сочетание мощности и элегантности\r\nНоутбук Huawei MateBook B3-510 Gray выполнен с использованием передовых технологий, что делает его мощным инструментом для решения любых задач. Благодаря процессору Intel Core i3 с тактовой частотой 2.1 ГГц и 8 ГБ оперативной памяти он обеспечивает высокую производительность и позволяет запускать несколько приложений одновременно без задержек. За хранение данных отвечает SSD на 256 ГБ, который обеспечивает быструю загрузку системы и приложений.\r\n\r\nОчень мощная конфигурация;\r\nПроцессор Intel Core i3 высокой производительности;\r\nБольшой жесткий диск на 256 ГБ;\r\nСтильный серый корпус.\r\nДля комфортного взаимодействия с ноутбуком Huawei MateBook B3-510 Gray имеет 15.6-дюймовый экран с разрешением 1920x1080 пикселей, что обеспечивает четкое и яркое отображение изображений. Звуковая система с одним встроенным динамиком и микрофоном позволяет наслаждаться качественным звуком при просмотре видео или проведении конференц-связи. Операционная система Windows 10 Professional обеспечивает удобное и интуитивно понятное управление ноутбуком.",
+    "price": 50999,
+    "time_create": "2024-02-06T20:49:20.766Z",
+    "time_update": "2024-02-06T20:49:20.766Z",
+    "is_published": true,
+    "cat": 4
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 33,
+  "fields": {
+    "title": "Ноутбук Huawei MateBook D 15 BOD-WDI9 Silver 53013SDW",
+    "content": "Ноутбук Huawei MateBook D 15 BOD-WDI9 silver 53013SDW - это ультрабук, который обладает множеством функциональных возможностей и привлекательным дизайном. Благодаря компактным размерам и небольшому весу, он идеально подходит для работы в поездках или вне офиса.",
+    "price": 50990,
+    "time_create": "2024-02-13T21:36:47.601Z",
+    "time_update": "2024-02-13T21:36:47.601Z",
+    "is_published": true,
+    "cat": 4
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 34,
+  "fields": {
+    "title": "Холодильник Beko B5RCNK403ZXBR серый",
+    "content": "Уникальный холодильник Beko B5RCNK403ZXBR сочетает в себе передовые технологии и стильный дизайн, предлагая комфортное хранение продуктов и энергоэффективную работу. Он обладает множеством функций, которые делают его незаменимым помощником в быту.",
+    "price": 42990,
+    "time_create": "2024-02-13T21:40:44.611Z",
+    "time_update": "2024-02-13T21:40:44.611Z",
+    "is_published": true,
+    "cat": 1
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 38,
+  "fields": {
+    "title": "Холодильник Weissgauff WCD 450 X серебристый",
+    "content": "",
+    "price": 91990,
+    "time_create": "2024-02-13T22:02:09.186Z",
+    "time_update": "2024-02-13T22:02:09.186Z",
+    "is_published": true,
+    "cat": 1
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 39,
+  "fields": {
+    "title": "Холодильник Gorenje NRK620EABXL4 черный",
+    "content": "",
+    "price": 75990,
+    "time_create": "2024-02-13T22:39:07.578Z",
+    "time_update": "2024-02-13T22:39:07.578Z",
+    "is_published": true,
+    "cat": 1
+  }
+},
+{
+  "model": "shop.goods",
+  "pk": 40,
+  "fields": {
+    "title": "Ноутбук ASUS ExpertBook B1 B1502CBA-BQ2729 90NX05U1-M03190",
+    "content": "Ноутбук ASUS ExpertBook B1 B1502CBA-BQ2729 Intel i5-1235U/8G/512G SSD/15.6\" FHD(1920x1080) IPS/Intel Iris Xe Graphics/No OS Черный, 90NX05U1-M03190\r\nASUS ExpertBook B1 ориентирован на корпоративных пользователей и соответствует современным требованиям к скорости, производительности и надежности работы\r\n\r\nПредставленная модель ноутбука превосходно подойдет для людей, ведущих активный образ жизни. Вы сможете свободно использовать ноутбук, где пожелаете — на работе, во время обучения или путешествий. Вес этого компьютера составляет всего 1.69 кг. Благодаря небольшому весу и компактным габаритам, ноутбук займет минимум места в сумке или рюкзаке.\r\n\r\nПроизводители применили в данной модели ряд технологий и решений, которые обеспечивают ее прочность и износостойкость. Крышка покрыта специальным алюминиевым сплавом, гарантирующим ее долговечность. Предусмотрена клавиатурная рама, которая делает корпус максимально прочным, специальный пеноматериал надежно защищает жесткий диск от тряски и ударов.\r\n\r\nНоутбук ASUS ExpertBook B1 готов к любым сценариям использования, он прекрасно зарекомендовал себя в работе с наиболее ресурсозатратными приложениями. Процессор Intel обеспечивает отличную скорость работы и возможность использования «тяжелых» программ и приложений. Благодаря видеокарте Intel UHD Graphics гарантируются отличные характеристики графики. А беспроводной модуль Wi-Fi позволяет организовать стабильное интернет соединение даже при слабом сигнале сети.\r\n\r\nДля комфорта использования в ноутбуке установлен SSD накопитель, что позволяет достичь быстрой скорости работы без уменьшения места для хранения данных.\r\n\r\nВ модели реализована интеллектуальная система, анализирующая данные с 5 датчиков и настраивающая оптимальный режим работы. Надежная система охлаждения и набор энергосберегающих технологий гарантирую максимально высокий КПД.",
+    "price": 59600,
+    "time_create": "2024-02-14T20:11:40.546Z",
+    "time_update": "2024-02-14T20:11:40.546Z",
+    "is_published": true,
+    "cat": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 1,
+  "fields": {
+    "parameter": "Общий объем, л",
+    "value": "356",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 2,
+  "fields": {
+    "parameter": "Размораживание",
+    "value": "No frost",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 3,
+  "fields": {
+    "parameter": "Размеры, мм (ШхГхВ)",
+    "value": "59.5x63.5x200",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 4,
+  "fields": {
+    "parameter": "Расположение",
+    "value": "Отдельностоящий",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 5,
+  "fields": {
+    "parameter": "Класс энергопотребления\n",
+    "value": "A++",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 6,
+  "fields": {
+    "parameter": "Общий объем холодильной камеры, л",
+    "value": "260",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 7,
+  "fields": {
+    "parameter": "Общий объем морозильной камеры, л",
+    "value": "96",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 8,
+  "fields": {
+    "parameter": "Вид компрессора",
+    "value": "Инверторный",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 9,
+  "fields": {
+    "parameter": "Открывание дверей",
+    "value": "Вправо",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 10,
+  "fields": {
+    "parameter": "Зона свежести",
+    "value": "Да",
+    "product": 1
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 61,
+  "fields": {
+    "parameter": "Объем, л",
+    "value": "2",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 62,
+  "fields": {
+    "parameter": "Мощность, Вт",
+    "value": "1500",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 63,
+  "fields": {
+    "parameter": "Материал корпуса",
+    "value": "Металл/пластик",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 64,
+  "fields": {
+    "parameter": "Тип управления",
+    "value": "Механическое",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 65,
+  "fields": {
+    "parameter": "Подсветка",
+    "value": "Да",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 66,
+  "fields": {
+    "parameter": "Тип нагревательного элемента",
+    "value": "Дисковый",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 67,
+  "fields": {
+    "parameter": "Конструкция чайника",
+    "value": "Вращение подставки на 360°, Светоиндикатор работы",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 68,
+  "fields": {
+    "parameter": "Системы защиты",
+    "value": "Автоотключение",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 69,
+  "fields": {
+    "parameter": "Гарантийный срок",
+    "value": "0",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 70,
+  "fields": {
+    "parameter": "Страна-изготовитель",
+    "value": "Китай",
+    "product": 2
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 81,
+  "fields": {
+    "parameter": "Тип",
+    "value": "Телевизор",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 82,
+  "fields": {
+    "parameter": "Диагональ экрана, дюймы",
+    "value": "43",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 83,
+  "fields": {
+    "parameter": "Разрешение",
+    "value": "3840×2160 4K",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 84,
+  "fields": {
+    "parameter": "Smart TV",
+    "value": "Да",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 85,
+  "fields": {
+    "parameter": "Тип подсветки",
+    "value": "Direct LED",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 86,
+  "fields": {
+    "parameter": "Беспроводные интерфейсы",
+    "value": "Wi-Fi, Bluetooth",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 87,
+  "fields": {
+    "parameter": "Частота обновления",
+    "value": "50 Гц",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 88,
+  "fields": {
+    "parameter": "Операционная система ТВ",
+    "value": "Tizen",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 89,
+  "fields": {
+    "parameter": "Число портов HDMI",
+    "value": "3",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 90,
+  "fields": {
+    "parameter": "Стандарт крепления VESA",
+    "value": "200x200 мм",
+    "product": 3
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 91,
+  "fields": {
+    "parameter": "Процессор",
+    "value": "AMD Ryzen 5 5600H (3.3 ГГц)",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 92,
+  "fields": {
+    "parameter": "Оперативная память",
+    "value": "16 ГБ",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 93,
+  "fields": {
+    "parameter": "Общий объем SSD, ГБ",
+    "value": "512",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 94,
+  "fields": {
+    "parameter": "Видеокарта",
+    "value": "AMD Radeon Graphics",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 95,
+  "fields": {
+    "parameter": "Операционная система",
+    "value": "Windows Home",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 96,
+  "fields": {
+    "parameter": "Диагональ экрана, дюймы",
+    "value": "16.1",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 97,
+  "fields": {
+    "parameter": "Время автономной работы, ч",
+    "value": "6",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 98,
+  "fields": {
+    "parameter": "Вес, кг",
+    "value": "1.9",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 99,
+  "fields": {
+    "parameter": "Технология матрицы",
+    "value": "IPS",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 100,
+  "fields": {
+    "parameter": "Тип памяти",
+    "value": "DDR4",
+    "product": 4
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 171,
+  "fields": {
+    "parameter": "Объем, л",
+    "value": "2",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 172,
+  "fields": {
+    "parameter": "Мощность, Вт",
+    "value": "1800",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 173,
+  "fields": {
+    "parameter": "Материал корпуса",
+    "value": "Пластик/стекло",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 174,
+  "fields": {
+    "parameter": "Тип управления",
+    "value": "Механическое",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 175,
+  "fields": {
+    "parameter": "Подсветка",
+    "value": "Да",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 176,
+  "fields": {
+    "parameter": "Тип нагревательного элемента",
+    "value": "Закрытая спираль",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 177,
+  "fields": {
+    "parameter": "Системы защиты",
+    "value": "Автоотключение",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 178,
+  "fields": {
+    "parameter": "Гарантийный срок",
+    "value": "Без гарантийного срока",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 179,
+  "fields": {
+    "parameter": "Страна-изготовитель",
+    "value": "Китай",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 180,
+  "fields": {
+    "parameter": "Бренд",
+    "value": "KONONO",
+    "product": 15
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 181,
+  "fields": {
+    "parameter": "Размер экрана",
+    "value": " 55\"(139 см)",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 182,
+  "fields": {
+    "parameter": "Технология экрана",
+    "value": " DLED",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 183,
+  "fields": {
+    "parameter": "Разрешение экрана",
+    "value": " UHD 4K (3840x2160)",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 184,
+  "fields": {
+    "parameter": "Частота обновления экрана, в Гц",
+    "value": " 60Hz",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 185,
+  "fields": {
+    "parameter": "Голосовой помощник",
+    "value": " Салют",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 186,
+  "fields": {
+    "parameter": "Прием ТВ сигнала",
+    "value": " Цифровое ТВ (DVB-T2)",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 187,
+  "fields": {
+    "parameter": "Беспроводное подключение",
+    "value": " Bluetooth/Wi-Fi",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 188,
+  "fields": {
+    "parameter": "Мощность звука, в Вт",
+    "value": " 20",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 189,
+  "fields": {
+    "parameter": "Разъемы",
+    "value": " Optical; RJ-45 (LAN/Ethernet); Модуль CI+",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 190,
+  "fields": {
+    "parameter": "Количество HDMI",
+    "value": " 3",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 191,
+  "fields": {
+    "parameter": "Количество USB",
+    "value": " 2",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 192,
+  "fields": {
+    "parameter": "Размер настенного крепления VESA",
+    "value": " 200x200",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 193,
+  "fields": {
+    "parameter": "Габариты без подставки, см (ВxШxГ)",
+    "value": " 71,4x123,6x7,7",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 194,
+  "fields": {
+    "parameter": "Габариты с подставкой, см (ВxШxГ)",
+    "value": " 76,9x123,6x25,2",
+    "product": 14
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 204,
+  "fields": {
+    "parameter": "Общий объем, в литрах",
+    "value": " 82",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 205,
+  "fields": {
+    "parameter": "Размораживание морозильной камеры",
+    "value": " ручное",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 206,
+  "fields": {
+    "parameter": "Количество компрессоров",
+    "value": " 1",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 207,
+  "fields": {
+    "parameter": "Мощность замораживания, килограммов в сутки",
+    "value": " 9",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 208,
+  "fields": {
+    "parameter": "Климатический класс",
+    "value": " SN-T",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 209,
+  "fields": {
+    "parameter": "Класс энергоэффективности",
+    "value": " A+",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 210,
+  "fields": {
+    "parameter": "Габаритные размеры (ВxШxГ), в сантиметрах",
+    "value": " 84x50x55",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 211,
+  "fields": {
+    "parameter": "Артикул сопутствующего товара",
+    "value": " 100029011257",
+    "product": 30
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 212,
+  "fields": {
+    "parameter": "Раскладка клавиатуры",
+    "value": " RU",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 213,
+  "fields": {
+    "parameter": "Операционная система",
+    "value": " Windows",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 214,
+  "fields": {
+    "parameter": "Диагональ экрана, в дюймах",
+    "value": " 15.6",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 215,
+  "fields": {
+    "parameter": "Разрешение экрана",
+    "value": " 1920x1080",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 216,
+  "fields": {
+    "parameter": "Тип экрана",
+    "value": " IPS",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 217,
+  "fields": {
+    "parameter": "Производитель процессора",
+    "value": " Intel",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 218,
+  "fields": {
+    "parameter": "Серия процессора",
+    "value": " Core i3",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 219,
+  "fields": {
+    "parameter": "Модель процессора",
+    "value": " 10110U",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 220,
+  "fields": {
+    "parameter": "Количество ядер процессора",
+    "value": " 2",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 221,
+  "fields": {
+    "parameter": "Объем оперативной памяти, ГБ",
+    "value": " 8",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 222,
+  "fields": {
+    "parameter": "Объем жесткого диска HDD, ГБ",
+    "value": " 0",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 223,
+  "fields": {
+    "parameter": "Объем SSD, ГБ",
+    "value": " 256",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 224,
+  "fields": {
+    "parameter": "Модель графического процессора",
+    "value": " UHD Graphics 620",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 225,
+  "fields": {
+    "parameter": "Объем видеопамяти, ГБ",
+    "value": " SMA",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 226,
+  "fields": {
+    "parameter": "Вес, кг",
+    "value": " 1.53",
+    "product": 31
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 227,
+  "fields": {
+    "parameter": "Раскладка клавиатуры",
+    "value": " EU; RU",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 228,
+  "fields": {
+    "parameter": "Операционная система",
+    "value": " Без ОС",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 229,
+  "fields": {
+    "parameter": "Диагональ экрана, в дюймах",
+    "value": " 15.6",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 230,
+  "fields": {
+    "parameter": "Разрешение экрана",
+    "value": " 1920x1080",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 231,
+  "fields": {
+    "parameter": "Тип экрана",
+    "value": " IPS",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 232,
+  "fields": {
+    "parameter": "Производитель процессора",
+    "value": " Intel",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 233,
+  "fields": {
+    "parameter": "Серия процессора",
+    "value": " Core i3",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 234,
+  "fields": {
+    "parameter": "Модель процессора",
+    "value": " 1115G4",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 235,
+  "fields": {
+    "parameter": "Количество ядер процессора",
+    "value": " 2",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 236,
+  "fields": {
+    "parameter": "Объем оперативной памяти, ГБ",
+    "value": " 8",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 237,
+  "fields": {
+    "parameter": "Объем жесткого диска HDD, ГБ",
+    "value": " 0",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 238,
+  "fields": {
+    "parameter": "Объем SSD, ГБ",
+    "value": " 256",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 239,
+  "fields": {
+    "parameter": "Модель графического процессора",
+    "value": " UHD Graphics",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 240,
+  "fields": {
+    "parameter": "Объем видеопамяти, ГБ",
+    "value": " SMA",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 241,
+  "fields": {
+    "parameter": "Вес, кг",
+    "value": " 1.53",
+    "product": 33
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 242,
+  "fields": {
+    "parameter": "Количество камер",
+    "value": " 2",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 243,
+  "fields": {
+    "parameter": "Количество дверей",
+    "value": " 2",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 244,
+  "fields": {
+    "parameter": "Система No Frost",
+    "value": " в холодильном и морозильном отделениях",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 245,
+  "fields": {
+    "parameter": "Компрессор",
+    "value": " инверторный",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 246,
+  "fields": {
+    "parameter": "Количество компрессоров",
+    "value": " 1",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 247,
+  "fields": {
+    "parameter": "Класс энергоэффективности",
+    "value": " A++",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 248,
+  "fields": {
+    "parameter": "Объем холодильной камеры, в литрах",
+    "value": " 257",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 249,
+  "fields": {
+    "parameter": "Размораживание холодильной камеры",
+    "value": " No Frost",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 250,
+  "fields": {
+    "parameter": "Зона свежести",
+    "value": " Да",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 251,
+  "fields": {
+    "parameter": "Объем морозильной камеры, в литрах",
+    "value": " 100",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 252,
+  "fields": {
+    "parameter": "Размораживание морозильной камеры",
+    "value": " No Frost",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 253,
+  "fields": {
+    "parameter": "Габариты, в сантиметрах (ВxШxГ)",
+    "value": " 201х59х65",
+    "product": 34
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 254,
+  "fields": {
+    "parameter": "Система No Frost",
+    "value": " в холодильном и морозильном отделениях",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 255,
+  "fields": {
+    "parameter": "Климатический класс",
+    "value": " N-ST",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 256,
+  "fields": {
+    "parameter": "Количество компрессоров",
+    "value": " 1",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 257,
+  "fields": {
+    "parameter": "Класс энергоэффективности",
+    "value": " A+",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 258,
+  "fields": {
+    "parameter": "Объем холодильной камеры, в литрах",
+    "value": " 286",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 259,
+  "fields": {
+    "parameter": "Зона свежести",
+    "value": " Нет",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 260,
+  "fields": {
+    "parameter": "Объем морозильной камеры, в литрах",
+    "value": " 141",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 261,
+  "fields": {
+    "parameter": "Габариты, в сантиметрах (ВxШxГ)",
+    "value": " 183,4x83x67.2",
+    "product": 38
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 262,
+  "fields": {
+    "parameter": "Система No Frost",
+    "value": " в холодильном и морозильном отделениях",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 263,
+  "fields": {
+    "parameter": "Климатический класс",
+    "value": " SN-N-ST-T",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 264,
+  "fields": {
+    "parameter": "Количество компрессоров",
+    "value": " 1",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 265,
+  "fields": {
+    "parameter": "Класс энергоэффективности",
+    "value": " A++",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 266,
+  "fields": {
+    "parameter": "Объем холодильной камеры, в литрах",
+    "value": " 235",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 267,
+  "fields": {
+    "parameter": "Зона свежести",
+    "value": " Да",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 268,
+  "fields": {
+    "parameter": "Объем морозильной камеры, в литрах",
+    "value": " 96",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 269,
+  "fields": {
+    "parameter": "Габариты, в сантиметрах (ВxШxГ)",
+    "value": " 200x60x59,2",
+    "product": 39
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 270,
+  "fields": {
+    "parameter": "Раскладка клавиатуры",
+    "value": " EU; RU",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 271,
+  "fields": {
+    "parameter": "Операционная система",
+    "value": " Без ОС",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 272,
+  "fields": {
+    "parameter": "Диагональ экрана, в дюймах",
+    "value": " 15.6",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 273,
+  "fields": {
+    "parameter": "Разрешение экрана",
+    "value": " 1920x1080",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 274,
+  "fields": {
+    "parameter": "Тип экрана",
+    "value": " IPS",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 275,
+  "fields": {
+    "parameter": "Производитель процессора",
+    "value": " Intel",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 276,
+  "fields": {
+    "parameter": "Серия процессора",
+    "value": " Core i5",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 277,
+  "fields": {
+    "parameter": "Модель процессора",
+    "value": " 1235U",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 278,
+  "fields": {
+    "parameter": "Количество ядер процессора",
+    "value": " 10",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 279,
+  "fields": {
+    "parameter": "Объем оперативной памяти, ГБ",
+    "value": " 8",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 280,
+  "fields": {
+    "parameter": "Объем жесткого диска HDD, ГБ",
+    "value": " 0",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 281,
+  "fields": {
+    "parameter": "Объем SSD, ГБ",
+    "value": " 512",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 282,
+  "fields": {
+    "parameter": "Модель графического процессора",
+    "value": " Iris Xe Graphics",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 283,
+  "fields": {
+    "parameter": "Объем видеопамяти, ГБ",
+    "value": " SMA",
+    "product": 40
+  }
+},
+{
+  "model": "shop.goodsspecifications",
+  "pk": 284,
+  "fields": {
+    "parameter": "Вес, кг",
+    "value": " 1.69",
+    "product": 40
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Холодильники",
+    "slug": "holodilniki"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Электрические чайники и термопоты",
+    "slug": "elektricheskie-chajniki-i-termopoty"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Телевизоры",
+    "slug": "televizory"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Ноутбуки",
+    "slug": "noutbuki"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 5,
+  "fields": {
+    "name": "Стиральные машины",
+    "slug": "stiralnye-mashiny"
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 1,
+  "fields": {
+    "images": "img_goods/2024/01/28/6701778674.jpeg",
+    "goods": 2
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 2,
+  "fields": {
+    "images": "img_goods/2024/02/14/100054196348b0_lA5SNNx.jpg",
+    "goods": 33
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 3,
+  "fields": {
+    "images": "img_goods/2024/02/14/100028999668b0.jpg",
+    "goods": 34
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 4,
+  "fields": {
+    "images": "img_goods/2024/01/28/fridge.jpeg",
+    "goods": 1
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 5,
+  "fields": {
+    "images": "img_goods/2024/01/28/6839907273.jpeg",
+    "goods": 3
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 6,
+  "fields": {
+    "images": "img_goods/2024/01/28/6472017835.jpeg",
+    "goods": 4
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 7,
+  "fields": {
+    "images": "img_goods/2024/02/14/600010273118b0_BqkfU8o.jpg",
+    "goods": 38
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 8,
+  "fields": {
+    "images": "img_goods/2024/02/14/100029841831b0.jpg",
+    "goods": 39
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 9,
+  "fields": {
+    "images": "img_goods/2024/02/15/600015339455b0.png",
+    "goods": 40
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 10,
+  "fields": {
+    "images": "img_goods/2024/01/28/fridge2.jpeg",
+    "goods": 1
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 11,
+  "fields": {
+    "images": "img_goods/2024/02/03/100061458676b0.png",
+    "goods": 14
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 12,
+  "fields": {
+    "images": "img_goods/2024/02/03/6755015941.jpeg",
+    "goods": 15
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 13,
+  "fields": {
+    "images": "img_goods\\2024\\02\\03\\100061458676b1.jpg",
+    "goods": 14
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 14,
+  "fields": {
+    "images": "img_goods/2024/02/03/100061458676b22.jpg",
+    "goods": 14
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 15,
+  "fields": {
+    "images": "img_goods/2024/02/03/100061458676b4.jpg",
+    "goods": 14
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 16,
+  "fields": {
+    "images": "img_goods/2024/02/03/100061458676b6.jpg",
+    "goods": 14
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 31,
+  "fields": {
+    "images": "img_goods/2024/02/04/100002527542b0_3sGqsGv.jpg",
+    "goods": 30
+  }
+},
+{
+  "model": "shop.goodsimages",
+  "pk": 32,
+  "fields": {
+    "images": "img_goods/2024/02/07/600005266399b0.jpg",
+    "goods": 31
+  }
+},
+{
+  "model": "shop.categoryimages",
+  "pk": 1,
+  "fields": {
+    "images": "img_cat/2024/01/29/logo_holodilnik.png",
+    "cat": 1
+  }
+},
+{
+  "model": "shop.categoryimages",
+  "pk": 2,
+  "fields": {
+    "images": "img_cat/2024/01/29/chainik.png",
+    "cat": 2
+  }
+},
+{
+  "model": "shop.categoryimages",
+  "pk": 3,
+  "fields": {
+    "images": "img_cat/2024/01/29/modern-tv-display-in-4k-white-background_872147-41245.png",
+    "cat": 3
+  }
+},
+{
+  "model": "shop.categoryimages",
+  "pk": 4,
+  "fields": {
+    "images": "img_cat/2024/01/29/20082461bb-PhotoRoom.png",
+    "cat": 5
+  }
+},
+{
+  "model": "shop.categoryimages",
+  "pk": 5,
+  "fields": {
+    "images": "img_cat/2024/01/29/e759a683ce1f63e90d6bc8a493e2d0dcfcc68295.png",
+    "cat": 4
+  }
+},
+{
+  "model": "users.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$BtGN5kTeFY5rWmPC3B9wWb$xnH3/EHzVlLtjUXuUGAEWQhAE+Z/qannHs2Qb8CYUTs=",
+    "last_login": "2024-02-23T15:00:28.298Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "Дмитрий",
+    "last_name": "Санников",
+    "email": "sannikov.dima@inbox.ru",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-02-11T20:29:07.014Z",
+    "sex": true,
+    "city": null,
+    "seller": true,
+    "photo": "",
+    "groups": [],
+    "user_permissions": [],
+    "orders": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 9,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$2rgGmsSdVPTEpPB4wq1vTb$3j567s3u9zFkK5nnyv/6sbvrnQ4oaZeNIe2J3gYZkEk=",
+    "last_login": "2024-02-16T18:08:06.634Z",
+    "is_superuser": false,
+    "username": "user11",
+    "first_name": "Ивановович",
+    "last_name": "Ивановавна",
+    "email": "user11@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-02-11T21:34:15.494Z",
+    "sex": false,
+    "city": 1,
+    "seller": true,
+    "photo": "users/2024/02/17/AnQTxogJxSg.jpg",
+    "groups": [],
+    "user_permissions": [],
+    "orders": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 10,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$2JLe3L9sk0umRdumAnVsu3$ZcgOQVGCFBfkSnRnKZE0sm7cUA13eeX/xm2SReU2fL8=",
+    "last_login": "2024-02-17T00:42:45.403Z",
+    "is_superuser": false,
+    "username": "user2",
+    "first_name": "Абдул",
+    "last_name": "рахманович",
+    "email": "user2@mail.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-02-12T17:07:22.565Z",
+    "sex": false,
+    "city": 3,
+    "seller": false,
+    "photo": "users/2024/02/17/35345.jpg",
+    "groups": [],
+    "user_permissions": [],
+    "orders": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 11,
+  "fields": {
+    "password": "!KYb1rtseOdGK21INuuhi2RE46412dMKrtKt56GVe",
+    "last_login": "2024-02-22T19:08:37.859Z",
+    "is_superuser": false,
+    "username": "Krovaves",
+    "first_name": "Это я",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-02-22T18:42:58.288Z",
+    "sex": true,
+    "city": null,
+    "seller": false,
+    "photo": "",
+    "groups": [
+      1
+    ],
+    "user_permissions": [],
+    "orders": []
+  }
+},
+{
+  "model": "users.city",
+  "pk": 1,
+  "fields": {
+    "city": "Москва",
+    "slug": "moskva"
+  }
+},
+{
+  "model": "users.city",
+  "pk": 2,
+  "fields": {
+    "city": "Санкт-Петербург",
+    "slug": "sankt-peterburg"
+  }
+},
+{
+  "model": "users.city",
+  "pk": 3,
+  "fields": {
+    "city": "Саратов",
+    "slug": "saratov"
+  }
+},
+{
+  "model": "users.city",
+  "pk": 4,
+  "fields": {
+    "city": "Екатеринбург",
+    "slug": "ekaterinburg"
+  }
+},
+{
+  "model": "social_django.usersocialauth",
+  "pk": 1,
+  "fields": {
+    "user": 11,
+    "provider": "github",
+    "uid": "151408047",
+    "extra_data": {
+      "id": 151408047,
+      "login": "Krovaves",
+      "expires": null,
+      "auth_time": 1708628917,
+      "token_type": "bearer",
+      "access_token": "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"
+    },
+    "created": "2024-02-22T18:42:58.295Z",
+    "modified": "2024-02-22T19:08:37.848Z"
+  }
+},
+{
+  "model": "social_django.usersocialauth",
+  "pk": 2,
+  "fields": {
+    "user": 1,
+    "provider": "vk-oauth2",
+    "uid": "147292165",
+    "extra_data": {
+      "id": 147292165,
+      "expires": 86399,
+      "auth_time": 1708700428,
+      "token_type": null,
+      "access_token": "vk1.a.B4GQQE-1EJ80o6KekfCD-yoq7X8hOigPLyJeMUwsWUKteFu--s_2fa8Nfns9zyrzBBVRekd0ocCjW6IDI8vm3o3FZM__0cPkcmcgZvqO6LH8gp3mKgs7Uj7UwQpTL-SdQQsTVqCjoJa7DJNtrwawoNn-aCAWw3hObmJ2DSE0pWgSXfmXAJRn8v-x7i0i_dqlXCaw1SsQmlGygVMZ9TA4AA"
+    },
+    "created": "2024-02-23T14:57:55.781Z",
+    "modified": "2024-02-23T15:00:28.291Z"
+  }
+}
+]
